@@ -1,0 +1,41 @@
+Model: "sequential_17"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn_14 (SimpleRNN)   (None, 30)                990       
+                                                                 
+ dense_20 (Dense)            (None, 1)                 31        
+                                                                 
+=================================================================
+Total params: 1,021
+Trainable params: 1,021
+Non-trainable params: 0
+________________________
+
+
+Volatility
+Simply speaking volatility is a measurement of price change of a certain asset or stock. Volatility is also associated with the risk of a certain asset.
+
+To put it into context:
+
+High volatility - suggests that the asset is subject to sharp price fluctuations. Consequently that would mean that investing into such an asset will be associated with higher risks as there can be a negative spike in the price. On the other side such an asset is attractive to investors/traders as a positive spike may result in a large profit.
+Low volatility - suggests that the asset is subject to very little or almost no price fluctuations. Investment into such assets is associated with lower risks. Usually low volatility is relevant for well-established or old markets.
+
+
+Model: "sequential_29"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_6 (LSTM)               (None, 30)                3960      
+                                                                 
+ dropout_6 (Dropout)         (None, 30)                0         
+                                                                 
+ dense_27 (Dense)            (None, 16)                496       
+                                                                 
+ dense_28 (Dense)            (None, 1)                 17        
+                                                                 
+=================================================================
+Total params: 4,473
+Trainable params: 4,473
+Non-trainable params: 0
+_________________________________________________________________
